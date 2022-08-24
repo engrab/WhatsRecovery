@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/PurchaseLabels"
+        android:text="@string/fun_subscriptions"/>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        style="@style/InventoryRecyclerView"
+        app:cardCornerRadius="@dimen/padding_10"
+        android:layout_margin="@dimen/padding_10"
+        android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/subs_inventory"
+           android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context="com.kotlin.trivialdrive.MakePurchaseFragment"
+            tools:listitem="@layout/inventory_item"
+            />
+    </androidx.cardview.widget.CardView>
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/PurchaseLabels"
+        android:text="@string/fun_products"/>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        style="@style/InventoryRecyclerView"
+        app:cardCornerRadius="@dimen/padding_10"
+        android:layout_margin="@dimen/padding_10"
+        android:layout_height="wrap_content">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/inapp_inventory"
+       android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context="com.kotlin.trivialdrive.MakePurchaseFragment"
+        tools:listitem="@layout/inventory_item"
+    />
+    </androidx.cardview.widget.CardView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

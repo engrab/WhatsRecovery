@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">WhatsRecovery</string>
+
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="save_number">Saved Number</string>
+    <string name="rate_review">Rate us</string>
+    <string name="more_apps">More Apps</string>
+    <string name="send_message">Send Message</string>
+    <string name="delete">Delete</string>
+    <string name="manage_app">WhatsRecovery</string>
+    <string name="message_pattern_cleared">Pattern cleared</string>
+    <string name="message_pattern_detected">Pattern drawing completed</string>
+    <string name="message_pattern_dot_added">Dot added to pattern</string>
+    <string name="message_deleted">Deleted Message Found</string>
+    <string name="message_pattern_started">Pattern drawing started</string>
+    <string name="message_was_deleted">Tap to check deleted message now.</string>
+
+    <color name="bg_row_background">#fa315b</color>
+    <string name="add_app">Next</string>
+    <string name="saved_numbers">Select from saved contacts</string>
+    <string name="message_menu">Message W/O Number</string>
+    <string name="repeat_menu">Repeat Message</string>
+
+    <string name="contact">Contact</string>
+
+    <string name="empty_message">No chats available</string>
+    <string name="format_request_permision">%1$s will need to have read/write permission your sdcard to save Files.Do you want to grant it?</string>
+    <string name="help">Tutorial</string>
+    <string name="howitworks">How it works?</string>
+    <string name="lib_name">PatternLockView</string>
+    <string name="menu_rate">Rate</string>
+    <string name="menu_share">Share App</string>
+    <string name="menu_add">Add &amp; Remove App</string>
+
+
+    <string name="mi_content_description_back">Back</string>
+    <string name="mi_content_description_next">Next</string>
+    <string name="mi_content_description_next_finish">Next/Finish</string>
+
+    <string name="only_empty_text">No media available</string>
+    <string name="files">files</string>
+    <string name="refresh_files">refresh_files</string>
+    <string name="remove_permission_framgent">remove_permission_fragment</string>
+    <string name="s1">Save image</string>
+    <string name="s2">Allow Ad to store image in Picture gallery?</string>
+    <string name="s3">Accept</string>
+    <string name="s4">Decline</string>
+    <string name="mi_content_description_skip">Skip</string>
+    <string name="mi_label_button_cta">Get started</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="noti_obserb">notionserving</string>
+    <string name="off">Service is not running. Click to start</string>
+    <string name="on">Service is running</string>
+    <string name="s5">Create calendar event</string>
+    <string name="s6">Allow Ad to create a calendar event?</string>
+    <string name="s7">Test Ad</string>
+    <string name="select_app">Configuration Settings</string>
+    <string name="selects">Select the Applications you want to follow.we will save your notification and detects changes</string>
+    <string name="share">Hey check out this amazing app at:</string>
+    <string name="thismsgwasdeleted">This message was deleted</string>
+    <string name="unread">UNREAD</string>
+    <string name="emptyview_no_messages">No messages</string>
+
+    <string name="emptyview_the_notification_will_appear_here">The notification will appear here</string>
+
+    <string name="about_give_us_5_star">Rate US</string>
+
+    <string name="Yes">Yes</string>
+    <string name="No">No</string>
+    <string name="about_contact_us">Contact us</string>
+    <string name="about_view_other_apps">View other apps</string>
+
+    <string name="permissiontcxt">Recover Deleted Messages is a backup &amp; utility app. It is designed to provide backup services for notifications, specific location of storage &amp; some utility features. This app uses common Android APIs to achieve services. It\'s not designed to interfere with other apps or services.However the use of app may be incompatible with terms of use of other apps. If this kind of incompatibility occurs, you shall not use this app.Using this app you accept its Terms &amp; Conditions and <a href='https://sites.google.com/view/privacypolicy-technetminds/home'>Privacy Policy </a></string>
+
+    <string name="Technet_Privacy" translatable="false">
+<b>Technet Minds</b>\n
+This SERVICE is provided by <b>Technet Minds</b> at no cost and is intended for use as it is.This page is used to inform visitors regarding my policies
+with the collection use  and disclosure of Personal Information if anyone decided to use my Service. If you choose to use my Service, then you agree to
+the collection and use of information in relation to this policy. The Personal Information that I collect is used for providing and improving the
+Service. I will not use or share your information with anyone except as described in this Privacy Policy.The terms used in this Privacy Policy have
+the same meanings as in our Terms and Conditions, which is accessible at All Language Translator Offline Dictionary unless otherwise defined in this
+Privacy Policy.\n
+<b>Information Collection and Use</b>\n
+For a better experience, while using our Service, I may require you to provide us with certain personally identifiable information. The information that
+I request will be retained on your device and is not collected by me in any way.The app does use third party services that may collect information
+used to identify you.\n
+Link to privacy policy of third party service providers used by the app.\n
+<b>.</b> Google Play Services\n
+<b>.</b> AdMob\n
+<b>Log Data</b>\n
+I want to inform you that whenever you use my Service, in a case of an error in the app I collect data and information (through third party products) on
+your phone called Log Data.This Log Data may include information such as your device Internet Protocol (“IP”) address, device name, operating system
+version, the configuration of the app when utilizing my Service, the time and date of your use of the Service, and other statistics.\n
+<b>Cookies</b>\n
+Cookies are files with a small amount of data that are commonly used as anonymous unique identifiers. These are sent to your browser from the websites that
+you visit and are stored on your devices internal memory.This Service does not use these “cookies” explicitly. However, the app may use third party
+code and libraries that use “cookies” to collect information and improve their services. You have the option to either accept or refuse these cookies
+and know when a cookie is being sent to your device. If you choose to refuse our cookies, you may not be able to use some portions of this Service.\n
+<b>Service Providers</b>\n
+I may employ third-party companies and individuals due to the following reasons:\n
+<b>.</b> facilitate our Service;\n
+<b>.</b> To provide the Service on our behalf;\n
+<b>.</b> To perform Service-related services; or\n
+<b>.</b> To assist us in analyzing how our Service is used.\n
+I want to inform users of this Service that these third parties have access to your Personal Information. The reason is to perform the tasks assigned
+to them on our behalf. However, they are obligated not to disclose or use the information for any other purpose.\n
+<b>Security</b>\n
+I value your trust in providing us your Personal Information, thus we are striving to use commercially acceptable means of protecting it. But remember
+that no method of transmission over the internet, or method of electronic storage is 100% secure and reliable, and I cannot guarantee its absolute
+security.\n
+<b>Links to Other Sites</b>\n
+This Service may contain links to other sites. If you click on a third-party link, you will be directed to that site. Note that these external sites
+are not operated by me. Therefore, I strongly advise you to review the Privacy Policy of these websites. I have no control over and assume no
+responsibility for the content, privacy policies, or practices of any third-party sites or services.\n
+<b>Childrens Privacy</b>\n
+These Services do not address anyone under the age of 13. I do not knowingly collect personally identifiable information from children under 13. In the
+case I discover that a child under 13 has provided me with personal information, I immediately delete this from our servers. If you are a parent
+or guardian and you are aware that your child has provided us with personal information, please contact me so that I will be able to do necessary
+actions.
+<b>Changes to This Privacy Policy</b>\n
+I may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. I will notify you of any
+changes by posting the new Privacy Policy on this page.\n
+This policy is effective as of 2020-06-26\n
+<b>Contact Us</b>\n
+If you have any questions or suggestions about my Privacy Policy, do not hesitate to contact me at technetminds@gmail.com.\n
+    </string>
+
+
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="fun_products" translatable="false">One Time Purchase</string>
+    <string name="fun_subscriptions" translatable="false">Subscriptions</string>
+</resources>

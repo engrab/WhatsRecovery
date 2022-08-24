@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/gameFragment">
+
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="com.technetminds.whatsrecovery.recover.deleted.messages.wamr.statussaver.InAppBilling.GameFragment"
+        android:label="fragment_game"
+        tools:layout="@layout/fragment_game">
+        <action
+            android:id="@+id/action_makePurchase"
+            app:destination="@id/makePurchaseFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/makePurchaseFragment"
+        android:name="com.technetminds.whatsrecovery.recover.deleted.messages.wamr.statussaver.InAppBilling.MakePurchaseFragment"
+        android:label="fragment_make_purchase"
+        tools:layout="@layout/fragment_make_purchase">
+        <action
+            android:id="@+id/action_playGame"
+            app:destination="@id/gameFragment"/>
+    </fragment>
+</navigation>

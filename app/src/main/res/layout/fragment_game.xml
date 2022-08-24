@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_above="@+id/relative_layout"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_margin="@dimen/padd_10"
+            android:text="Tap upgrade now to remove ads"/>
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/padd_10"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            app:lottie_rawRes="@raw/online_payment"
+            app:lottie_autoPlay="true"
+            android:id="@+id/animation"
+            app:lottie_loop="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/padd_20"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="@string/app_name"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:textSize="18sp"
+
+                android:layout_marginStart="@dimen/padd_10"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:padding="@dimen/padd_10"
+                android:background="@drawable/rectangle_shape"
+                android:textColor="@color/white"
+                android:text="PRO"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/padd_10"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/vec_tick" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginStart="@dimen/padd_20"
+                android:text="Ad free experience"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_alignParentBottom="true"
+    android:id="@+id/relative_layout"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/padding_10"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:id="@+id/start_with_ads"
+            android:layout_marginTop="@dimen/padd_10"
+            android:textColor="@color/black"
+            android:padding="@dimen/padd_10"
+            android:background="#f6f6f6"
+            android:text="Continue with ads"/>
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:id="@+id/btn_purchase"
+            android:layout_marginTop="@dimen/padd_20"
+            android:padding="@dimen/padd_10"
+            android:background="@drawable/rectangle_shape"
+            android:text="Upgrade now"/>
+    </LinearLayout>
+</RelativeLayout>
+</RelativeLayout>
+
+

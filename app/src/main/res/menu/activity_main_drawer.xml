@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+        <item
+            android:id="@+id/action_add_apps"
+            android:icon="@drawable/icon_add"
+            android:title="@string/menu_add" />
+
+        <item
+            android:id="@+id/restart_service"
+            android:icon="@drawable/ic_restore"
+            android:title="Restart Service" />
+        <item
+            android:id="@+id/auto_start"
+            android:icon="@drawable/ic_baseline_autorenew_24"
+            android:title="Auto Start App" />
+
+
+
+        <item
+            android:id="@+id/nav_privacy"
+            android:icon="@drawable/icon_person"
+            android:title="@string/privacy_policy" />
+
+        <item
+            android:id="@+id/nav_rate_us"
+            android:icon="@drawable/icon_thumb_up"
+            android:title="@string/menu_rate" />
+
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/icon_share"
+            android:title="@string/menu_share" />
+
+
+
+
+</menu>

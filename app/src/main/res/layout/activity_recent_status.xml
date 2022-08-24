@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/white"
+    tools:context=".Activities.RecentStatusActivity"
+    android:keepScreenOn="true">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_recent_status"
+        android:background="@color/colorPrimary"
+        app:title="Recent Status"
+        app:titleTextColor="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recent_status_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_lay"
+        android:layout_below="@+id/toolbar_recent_status"
+        android:divider="#b9b9b9"
+        android:dividerHeight="1dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/bottom_lay"
+        android:layout_above="@id/llAdds"
+        android:layout_height="wrap_content">
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/llAdds"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"/>
+</RelativeLayout>

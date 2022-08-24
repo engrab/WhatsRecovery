@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/parent_lay"
+    android:layout_height="70dp"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/country_name"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:layout_weight="1"
+        android:text="pakistan"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/country_code"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".5"
+        android:gravity="center_vertical"
+        android:text="92"
+        android:textAlignment="center"
+        android:textColor="@android:color/black" />
+
+
+
+</LinearLayout>

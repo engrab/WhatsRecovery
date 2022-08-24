@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:background="#fff"
+    tool:context=".Activities.SavedStatusActivity"
+    android:keepScreenOn="true">
+
+    <RelativeLayout
+        android:id="@+id/lay_toobar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_saved_status"
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimary"
+            app:titleTextColor="@android:color/white"
+            app:title="Saved Status"
+            android:layout_height="?actionBarSize"/>
+
+            <com.google.android.material.tabs.TabLayout
+                android:background="@color/colorPrimary"
+                android:layout_below="@+id/toolbar_saved_status"
+                android:id="@+id/tab_layoutdiet"
+                app:tabTextColor="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/saved_status_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_lay"
+        android:layout_below="@+id/lay_toobar" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/bottom_lay"
+        android:layout_above="@id/llAdds"
+        android:layout_height="wrap_content">
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/llAdds"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"/>
+</RelativeLayout>

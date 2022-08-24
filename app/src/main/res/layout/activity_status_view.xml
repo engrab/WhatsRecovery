@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:keepScreenOn="true">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_above="@+id/bottom_btn"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/image_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <VideoView
+            android:id="@+id/video_display"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/bottom_btn"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/bottom_lay"
+        android:layout_height="90dp"
+        android:padding="15dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/btn_share"
+                android:layout_width="wrap_content"
+                android:layout_above="@+id/text_share"
+                android:layout_height="wrap_content"
+                android:src="@drawable/btn_share" />
+
+            <TextView
+                android:id="@+id/text_share"
+                android:layout_width="match_parent"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:layout_alignParentBottom="true"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:text="Share"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/btn_delete"
+                android:layout_width="wrap_content"
+                android:layout_above="@id/text_delete"
+                android:layout_height="wrap_content"
+                android:src="@drawable/btn_delete" />
+
+            <TextView
+                android:id="@+id/text_delete"
+                android:layout_width="match_parent"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:layout_alignParentBottom="true"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:text="Delete"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/btn_share_whatsapp"
+                android:layout_width="wrap_content"
+                android:layout_above="@+id/text_share_whatsapp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/btn_share_whatsapp" />
+
+            <TextView
+                android:id="@+id/text_share_whatsapp"
+                android:layout_width="match_parent"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:layout_alignParentBottom="true"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:text="Share Whatsapp"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/bottom_lay"
+        android:layout_above="@id/llAdds"
+        android:layout_height="wrap_content">
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llAdds"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"/>
+
+</RelativeLayout>
