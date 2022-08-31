@@ -9,66 +9,67 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:orientation="vertical"
+        android:layout_height="0dp"
         android:layout_weight="1"
-        android:layout_height="0dp">
+        android:orientation="vertical">
 
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding_20"
             android:gravity="center"
             android:text="Notification Access"
-            android:textStyle="bold"
+            android:textColor="@color/black"
             android:textSize="30sp"
-            android:layout_margin="@dimen/padding_20"
-            android:textColor="@color/black" />
+            android:textStyle="bold" />
 
         <com.airbnb.lottie.LottieAnimationView
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:layout_margin="@dimen/padding_10"
-            app:lottie_rawRes="@raw/empty_notification"
-            app:lottie_autoPlay="true"
             android:layout_marginTop="@dimen/padding_20"
-            app:lottie_loop="true" />
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/empty_notification" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:orientation="vertical"
+        android:layout_weight="1"
         android:gravity="bottom"
-        android:layout_weight="1">
+        android:orientation="vertical">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:gravity="center"
             android:layout_margin="@dimen/padding_20"
+            android:gravity="center"
+            android:text="We look at your notifications so we can catch those removed messages"
             android:textColor="@color/black"
             android:textSize="15sp"
-            android:textStyle="bold"
-            android:text="We look at your notifications so we can catch those removed messages" />
+            android:textStyle="bold" />
 
         <Button
+            android:id="@+id/allow_notification"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:textColor="@color/white"
-            android:gravity="center"
             android:layout_gravity="center"
-            android:textStyle="bold"
-            android:id="@+id/allow_notification"
             android:layout_margin="@dimen/padding_20"
             android:background="@drawable/rectangle_shape"
-            android:text="Allow" />
+            android:gravity="center"
+            android:text="Allow"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
     </LinearLayout>
+
     <LinearLayout
         android:id="@+id/llAdds"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="3dp"
         android:layout_marginBottom="3dp"
-        android:orientation="horizontal"/>
+        android:orientation="horizontal" />
 </LinearLayout>

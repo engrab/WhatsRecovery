@@ -1,20 +1,18 @@
 package com.technetminds.whatsrecovery.recover.deleted.messages.wamr.statussaver.Activities;
 
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.PowerManager;
-import android.provider.Settings;
 import android.text.method.LinkMovementMethod;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.blogspot.atifsoftwares.animatoolib.Animatoo;
 import com.google.android.gms.ads.AdView;
@@ -26,9 +24,10 @@ public class PermissionActivity extends AppCompatActivity {
     TextView termdialog;
     boolean isBackground;
     AdView adView;
+
     @Override
     protected void onDestroy() {
-        if (adView != null){
+        if (adView != null) {
             adView.destroy();
         }
         super.onDestroy();
@@ -55,28 +54,10 @@ public class PermissionActivity extends AppCompatActivity {
         btn_agree.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-//                    if (isBackground) {
-//                        Intent intent = new Intent();
-//                        String packageName = getPackageName();
-//                        PowerManager pm = (PowerManager) getSystemService(POWER_SERVICE);
-//                        if (!pm.isIgnoringBatteryOptimizations(packageName)) {
-//                            intent.setAction(Settings.ACTION_REQUEST_IGNORE_BATTERY_OPTIMIZATIONS);
-//                            intent.setData(Uri.parse("package:" + packageName));
-//                            startActivityForResult(intent, 101);
-//                        }
-//                    }
-//                    else {
-//                        startActivity(new Intent(PermissionActivity.this, NotificationPermissionActivity.class));
-//                        Animatoo.animateSwipeLeft(PermissionActivity.this);
-//                        finish();
-////                    }
-//                } else {
-                    startActivity(new Intent(PermissionActivity.this, NotificationPermissionActivity.class));
-                    Animatoo.animateSwipeLeft(PermissionActivity.this);
-                    finish();
 
-//                }
+                startActivity(new Intent(PermissionActivity.this, NotificationPermissionActivity.class));
+                Animatoo.animateSwipeLeft(PermissionActivity.this);
+                finish();
 
 
             }

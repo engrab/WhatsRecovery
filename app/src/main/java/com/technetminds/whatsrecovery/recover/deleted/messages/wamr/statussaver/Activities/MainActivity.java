@@ -54,7 +54,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private static final int REQUEST_CODE = 21;
     private int position = 0;
     DrawerLayout drawerLayout;
-
     NavigationView navigationView;
     ActionBarDrawerToggle toggle;
     MaterialToolbar toolbar;

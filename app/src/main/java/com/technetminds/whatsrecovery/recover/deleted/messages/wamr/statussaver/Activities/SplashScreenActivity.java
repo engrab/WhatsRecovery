@@ -26,10 +26,6 @@ public class SplashScreenActivity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         super.onCreate(bundle);
         setContentView(R.layout.activity_splash);
-        PreferencePurchase preferencePurchase = new PreferencePurchase(this);
-        if (preferencePurchase.getItemDetail().equals("") && preferencePurchase.getProductId().equals("")) {
-            AdmobUtils.loadInterstitial(this);
-        }
 
         SharedPreferences sharedPreferences = getSharedPreferences("onceinstall", Context.MODE_PRIVATE);
         firstTime = sharedPreferences.getBoolean("isfirstTime", true);
@@ -48,34 +44,14 @@ public class SplashScreenActivity extends AppCompatActivity {
                     finish();
 
                 } else {
-                    InterstitialAd interstitial = AdmobUtils.getInterstitial();
-                    if (interstitial != null) {
-                        interstitial.show(SplashScreenActivity.this);
-                        interstitial.setFullScreenContentCallback(new FullScreenContentCallback() {
-                            @Override
-                            public void onAdDismissedFullScreenContent() {
-                                super.onAdDismissedFullScreenContent();
-
-                                startActivity(new Intent(SplashScreenActivity.this, MainActivity.class));
-                                Animatoo.animateInAndOut(SplashScreenActivity.this);
-                                finish();
-
-                            }
-
-                            @Override
-                            public void onAdFailedToShowFullScreenContent(@NonNull AdError adError) {
-                                super.onAdFailedToShowFullScreenContent(adError);
-
-                            }
-
-
-                        });
-                    }
+                    startActivity(new Intent(SplashScreenActivity.this, MainActivity.class));
+                    Animatoo.animateZoom(SplashScreenActivity.this);
+                    finish();
 
                 }
 
             }
-        }, 6000);
+        }, 2000);
 
     }
 
